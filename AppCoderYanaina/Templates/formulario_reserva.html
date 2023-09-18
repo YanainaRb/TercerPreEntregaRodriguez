@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reserva de Servicio</title>
+</head>
+<body>
+    <h1>Reserva de Servicio</h1>
+    
+    <form method="post">
+        {% csrf_token %}
+
+        {{ form.non_field_errors }}
+        <div class="field">
+            <label for="{{ form.nombre_cliente.id_for_label }}">Nombre del Cliente:</label>
+            {{ form.nombre_cliente }}
+            {{ form.nombre_cliente.errors }}
+        </div>
+        
+        <div class="field">
+            <label for="{{ form.celular.id_for_label }}">Celular:</label>
+            {{ form.celular }}
+            {{ form.celular.errors }}
+        </div>
+        
+        <div class="field">
+            <label for="{{ form.servicio.id_for_label }}">Servicio:</label>
+            {{ form.servicio }}
+            {{ form.servicio.errors }}
+        </div>
+        
+        <div class="field">
+            <label for="{{ form.fecha_reserva.id_for_label }}">Fecha de Reserva:</label>
+            {{ form.fecha_reserva }}
+            {{ form.fecha_reserva.errors }}
+        </div>
+
+        <button type="submit">Reservar</button>
+    </form>
+</body>
+</html>
