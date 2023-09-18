@@ -20,8 +20,8 @@ from AppCoderYanaina.views import reservar_servicio, lista_servicios, lista_perr
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('Reservar_servicio/', reservar_servicio, name='reservar_servicio'),
-    path('ListaServicios/', lista_servicios, name='lista_servicios'),
+    path('reservar_servicio/', reservar_servicio, name='reservar_servicio'),
+    path('lista_servicios/', lista_servicios, name='lista_servicios'),
     path('lista_perros/', lista_perros, name='lista_perros'),
     path('agregar_perro/', agregar_perro, name='agregar_perro'),  
 ]
