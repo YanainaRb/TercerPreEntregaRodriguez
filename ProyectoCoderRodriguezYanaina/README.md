@@ -1,3 +1,2 @@
 Este proyecto es una aplicación web para una peluqueria canina donde se pueden ver y reservar los servicios que brindan. Tambien en esta aplicación, puedes agregar, buscar y ver la lista de los perros que ya son clientes.
 
-Facilito algunos links de ingreso: Link: http://127.0.0.1:8000/app1 Link a un form: http://127.0.0.1:8000/app1/empleadosForm Link a una lista:http://127.0.0.1:8000/app1/empleados/ Link a una busqueda:http://127.0.0.1:8000/app1/encontrarempleados/
